@@ -19,7 +19,8 @@ jobs:
     - name: Set up JDK 1.8
       uses: actions/setup-java@v2
       with:
-        java-version: 1.8
+        java-version: '1.8'
+        distribution: 'zulu'  # Specify the distribution
 
     - name: Cache Maven packages
       uses: actions/cache@v2
